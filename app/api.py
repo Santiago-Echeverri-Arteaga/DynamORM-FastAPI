@@ -7,7 +7,7 @@ from mangum import Mangum
 # el config file
 app = FastAPI()
 #Incluir los endpoints
-##app.include_router(heroes.router, prefix="/heroes",tags=["Heroes"])
+app.include_router(heroes.router, prefix="/heroes",tags=["Heroes"])
 
 @app.get("/")
 def root():
